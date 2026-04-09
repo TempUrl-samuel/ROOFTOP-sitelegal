@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*Header*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+header>ul>li {
+    display: inline-block;
+    width: 4%;
+}
+header ul li a {
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+header ul {
+    padding: 0;
+}
+header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+a {
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+}
+header ul {
+    padding: 10px 0;
+}
+#logo {
+    width: 20%;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+#logo img {
+    width: 67px;
+    height: 79px;
+}
+#titulo-daily {
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+}
+.button-collapse {
+    position: relative;
+}
+.button-collapse>ul {
+    padding: 0;
+    position: absolute;
+    width: 150%;
+    height: 15vh;
+    padding-top: 5vh;
+    z-index: -10;
+    background-color: aliceblue;
+    opacity: 0;
+    text-align: center;
+    list-style: none;
+
+}
+.button-collapse li {
+    height: 5vh;
+}
+.button-collapse:hover ul {
+    opacity: 1;
+    z-index: 10;
+}
+/*------------------------------Body--------------------------------------------*/
+#section1 {
+    height: 78vh;
+    background-image: url(https://preview.colorlib.com/theme/rooftop/img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+#button-menu {
+    line-height: 48px;
+    padding: 0 30px;
+    border-radius: 0px;
+    background: #ad9966;
+    border: 1px solid #ad9966;
+    color: #fff;
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    letter-spacing: 2px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+#button-menu:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+.home-banner-text {
+    width: 30%;
+    align-items: center !important;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 40%;
+    color: aliceblue;
+    font-size: 55px;
+    font-weight: 100;
+}
+.home-banner-text h1 {
+    font-weight: 100;
+    text-align: center;
+
+}
+/*---------------Body - parte dos dois textos um do lado do outro---------------*/
+.corpo-do-site {
+    padding-left: 10%;
+}
+.menu-esquerdo {
+    display: inline-block;
+    width: 35%;
+    font-size: larger;
+    letter-spacing: 7px;
+    margin: 80px;
+}
+.menu-direito {
+    display: inline-block;
+    width: 35%;
+    height: 110vh;
+    padding: 120px 30px;
+    background-color: #faf5f0;
+    text-align: center;
+    z-index: -10;
+}
+.menu-direito h3 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-top: 2vh;
+    font-weight: normal;
+    font-style: italic;
+}
+.menu-esquerdo h1 {
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0);
+}
+.menu-esquerdo p {
+    color: #7777;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+/*=--------------------------------os botões do lado---------------------------=*/
+.view {
+    width: 92px;
+    height: 180px;
+    background-image: url(view-menu-bg.png);
+    position: fixed;
+    top: 40%;
+    line-height: 180px;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+.book {
+    width: 92px;
+    height: 180px;
+    background-image: url(book-table-bg.png);
+    position: fixed;
+    top: 40%;
+    z-index: 1;
+    right: 0;
+    line-height: 180px;
+    transition: 0.5s;
+}
+.view a {
+    transform: rotate(90deg);
+    display: inline-block;
+    transition: 0.5s;
+    color: black;
+}
+.book a {
+    transform: rotate(-90deg);
+    transition: 0.5s;
+    display: inline-block;
+}
+.view:hover a {
+    transform: rotate(0deg);
+}
+.book:hover a {
+    transform: rotate(0deg);
+}
+/*-----------------------------------galeria - imagens--------------------------*/
+img {
+    transition: 0.4s ease;
+
+}
+
+.chef {
+    width: 555px;
+    height: 800px;
+    overflow: hidden;   
+    margin: 0;
+    left: 29vh;
+    bottom: 100px;
+}
+
+#chef {
+    position: absolute;
+}
+/*----------------------texto ao lado da imagem do chef-------------------------*/
+.quotes
+{
+padding: 0px 15px;
+margin: 95px;
+text-align: center;
+}
+.quotes>h3
+{
+position: absolute;
+left: 60%;
+size: 500px;
+padding-right: 10vh;
+}
+.quotes>p
+{
+position: absolute;
+left: 50%;
+padding-top: 10vh;
+padding-right: 20vh;
+}
