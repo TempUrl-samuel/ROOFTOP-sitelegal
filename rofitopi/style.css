@@ -100,7 +100,6 @@ header ul {
     background-position: center;
     position: relative;
 }
-
 #button-menu {
     line-height: 48px;
     padding: 0 30px;
@@ -137,6 +136,7 @@ header ul {
 }
 .corpo-do-site {
     padding-left: 10%;
+    align-items: center;
 }
 .menu-esquerdo {
     display:inline-block;
@@ -152,18 +152,14 @@ header ul {
     display: inline-block;
     width: 35%;
     height: 120vh;
-    padding-top: 120px;
     background-color: #faf5f0;
     text-align: center;
     z-index: -10;
-    margin-bottom: 15vh;
-    padding: 20px;
 }
 .aperetivo{
     padding-top: 120px;
     margin-bottom: 50px;
 }
-
 .menu-direito h3 {
     font-family: "Playfair Display", serif;
     color: #000;
@@ -180,10 +176,14 @@ margin-top: 1rem;
 margin-bottom: 1rem;
 border-top: 1px solid;
 margin: auto;
-color: gray;}
-.drinks hr{width: 20vh;}
-.course hr {width: 18vh;}
+color: gray;
+}
+.drinks hr{width: 20vh;
 
+}
+.course hr {width: 18vh;
+
+}
 .menu-esquerdo h1 {
     font-family: "Playfair Display", serif;
     color: rgb(0, 0, 0);
@@ -204,7 +204,6 @@ color: gray;}
     position: fixed;
     top: 40%;
     line-height: 180px;
-    left: 0;
     transition: 0.5s;
     z-index: 1;
 }
@@ -245,7 +244,7 @@ img {
     display: inline-block;
     overflow: hidden;
     position: relative;
-    top: -170px;
+    top: -100px;
     left: -15vh;
 }
 #sushi:hover img{
@@ -255,7 +254,6 @@ img {
 .italiano {
     display: inline-block;
     overflow: hidden;
-    position: absolute;
     height: 370px;
     width: 453px;
 }
@@ -263,20 +261,20 @@ img {
     overflow: hidden;
     position: absolute;
     right: 50%;
-    left: 105vh;
-    bottom: -175vh;
+    left: 119vh;
+    bottom: -230vh;
     padding-top: 10vh;
 }
 .macarrao {
     display: inline-block;
     overflow: hidden;
 }
-
 #macaroon {
     overflow: hidden;
-    position: relative;
-    right: 32.9vh;
-    top: 56vh;
+    position: absolute;
+    right: 43%;
+    top: 310vh;
+
 }
 .peixe {
     display: inline-block;
@@ -284,10 +282,10 @@ img {
 }
 #filet {
     overflow: hidden;
-    position: relative;
-    right: 31.7vh;
-    bottom: -77vh;
+    position: absolute;
+    bottom: -315vh;
     padding: 10px;
+    left: 58.7%;
 }
 .gallery
 {
