@@ -287,12 +287,20 @@ img {
     padding: 10px;
     left: 58.7%;
 }
-.gallery
-{
+.gallery{
     width: 60%;
     margin: auto;
 }
 .gallery>img:hover {
     color: #000;
     transform: scale(1.2);
+}
+/*FORMULÁRIO*/
+.forms{
+    position: absolute;
+    padding-top: 50vh;
+}
+.formulario{
+    background-color: #FAF5F0;
+    font: "Roboto", "sans serif";
 }
