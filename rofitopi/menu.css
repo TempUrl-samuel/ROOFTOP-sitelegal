@@ -132,7 +132,12 @@ header ul {
 .home-banner-text h1 {
     font-weight: 100;
     text-align: center;
-
+    letter-spacing: 8.8px;
+}
+.home-banner-text p{
+    margin-top: 15px;
+    font-size: 18px;
+    font-style: "Roboto", "sans-serif";
 }
 
 /*---------------Body - parte dos dois textos um do lado do outro---------------*/
@@ -249,19 +254,26 @@ img {
 
 /*----------------------texto ao lado da imagem do chef-------------------------*/
 .quotes {
-    padding: 0px 15px;
-    margin: 95px;
+    width: 60%;
+    margin: auto;
     text-align: center;
 }
 
 .quotes>h3 {
+    font-style: "Playfair Display", "serif";
     position: absolute;
+    font-size: 48px;
+    letter-spacing: 7.2px;
     left: 60%;
-    size: 500px;
+    font-weight: normal;
     padding-right: 10vh;
+    width: 370px;
+    height: 144;
 }
 
 .quotes>p {
+    color: #7777;
+    font-style: "Roboto", "sans-serif" ;
     position: absolute;
     left: 50%;
     padding-top: 10vh;
