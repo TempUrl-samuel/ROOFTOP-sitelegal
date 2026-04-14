@@ -7,9 +7,21 @@
     margin: 0;
 }
 
-header>ul>li {
+/*BANNER - PRIMEIRA COISA QUE SE VER AO ENTRAR NO SITE*/
+
+header ul a {
+    padding: 10px 0;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 450;
+    text-transform: uppercase;
+    padding-right: -5rem;
+    padding-left: -5rem;
+}
+
+header ul li {
     display: inline-block;
     width: 4%;
+    margin-right: 30px;
 }
 
 header ul li a {
@@ -22,6 +34,29 @@ header ul {
     padding: 0;
 }
 
+.dropdown {
+    background-color: #fff;
+    padding-right: 10px;
+}
+
+#logo {
+    width: 20%;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+#logo img {
+    align-items: center;
+    padding-left: 10px;
+    margin-right: 20px;
+    width: 77px;
+    height: 79px;
+}
+
+.about-espaco {
+    margin-right: 20vh;
+}
+
 header {
     text-align: center;
     position: sticky;
@@ -30,7 +65,7 @@ header {
     z-index: 10;
 }
 
-a {
+header ul a {
     text-decoration: none;
     outline: 0;
     color: #fff;
@@ -42,22 +77,15 @@ p {
     margin: 0 0 50px;
     font-family: "Roboto", sans-serif;
 }
+/*PARTE ABAIXO DO BANNER - MENU E OUTRAS COISAS*/
 
-header ul {
-    padding: 10px 0;
+#button-menu a{
+    text-decoration: none;
+    color: #FAF5F0;
 }
-
-/*BANNER - PRIMEIRA COISA QUE SE VER AO ENTRAR NO SITE*/
-
-#logo {
-    width: 20%;
-    padding-top: 20px;
-    vertical-align: middle;
-}
-
-#logo img {
-    width: 67px;
-    height: 79px;
+#button-menu a:hover{
+    color: #ad9966;
+    transition: 0.5s ease;
 }
 
 .menu-esquerdo {
@@ -191,9 +219,9 @@ header ul {
 }
 
 #section1 {
-    height: 78vh;
+    height: 100vh;
     width: 100%;
-    background-image: url(https://preview.colorlib.com/theme/rooftop/img/header-bg.png);
+    background-image: url(header-bg-rooftop.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -232,7 +260,6 @@ header ul {
 
 .drinks hr {
     width: 20vh;
-
 }
 
 .course hr {
@@ -241,10 +268,11 @@ header ul {
 }
 
 /*BOTÕES DO LADO DA TELA - USADOS PARA LEVAR AO VIEW MENU E BOOK A TABLE*/
+
 .view {
     width: 92px;
     height: 180px;
-    background-image: url(view-menu-bg.png);
+    background-image: url(view-menu-rooftop.png);
     position: fixed;
     top: 40%;
     line-height: 180px;
@@ -285,7 +313,19 @@ header ul {
     transform: rotate(0deg);
 }
 
+.botaos-do-lado .book a {
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+}
+
+.botaos-do-lado .view a {
+    text-decoration: none;
+    outline: 0;
+}
+
 /*IMAGENS PARA AMOSTRAR*/
+
 .gallery img {
     transition: 0.4s ease;
     align-items: center;
@@ -295,7 +335,7 @@ header ul {
     display: inline-block;
     overflow: hidden;
     position: absolute;
-    top: 210vh;
+    top: 230vh;
     right: 100vh;
     width: 648;
     height: 450;
@@ -326,7 +366,7 @@ header ul {
     position: absolute;
     overflow: hidden;
     right: 100vh;
-    top: 320vh;
+    top: 340vh;
 }
 
 #macaroon:hover {
@@ -338,7 +378,7 @@ header ul {
     position: absolute;
     display: inline-block;
     overflow: hidden;
-    bottom: -315vh;
+    top: 350vh;
     padding: 10px;
     left: 103vh;
 }
@@ -359,12 +399,14 @@ header ul {
 }
 
 /*FORMULÁRIO*/
+
+.formulario {
+    
+    background-color: #FAF5F0;
+    font: "Roboto", "sans serif";
+}
+
 .forms {
     position: absolute;
     padding-top: 50vh;
-}
-
-.formulario {
-    background-color: #FAF5F0;
-    font: "Roboto", "sans serif";
 }
