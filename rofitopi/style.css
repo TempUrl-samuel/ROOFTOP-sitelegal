@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/**/
+
+/*COISAS QUE AFETA TODO O SITE*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -46,6 +47,8 @@ header ul {
     padding: 10px 0;
 }
 
+/*BANNER - PRIMEIRA COISA QUE SE VER AO ENTRAR NO SITE*/
+
 #logo {
     width: 20%;
     padding-top: 20px;
@@ -57,12 +60,107 @@ header ul {
     height: 79px;
 }
 
+.menu-esquerdo {
+    display: inline-block;
+    padding-bottom: 30vh;
+    width: 35%;
+    font-size: larger;
+    letter-spacing: 7px;
+    margin: 80px;
+}
+
+.menu-esquerdo h1 {
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0);
+}
+
+.menu-esquerdo p {
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.menu-direito {
+    position: absolute;
+    vertical-align: middle;
+    display: inline-block;
+    width: 40%;
+    height: 130vh;
+    background-color: #faf5f0;
+    text-align: center;
+    z-index: -10;
+}
+
+.menu-direito hr {
+    width: 13vh;
+    height: 2px;
+    text-align: center;
+    border: none;
+    margin: auto;
+    background-color: #7777774e;
+}
+
+.menu-direito p {
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.menu-direito dd {
+    color: #464646c1;
+    margin-top: 10px;
+    margin-bottom: -2vh;
+}
+
+.menu-direito h3 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.corpo-do-site {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    margin-right: 12vh;
+}
+
 #titulo-daily {
+    padding-top: 20vh;
     margin-bottom: 20px;
     font-size: 48px;
     line-height: 1.5;
     letter-spacing: 7.2px;
     text-transform: uppercase;
+    font-weight: 100;
+}
+
+#button-menu {
+    line-height: 48px;
+    padding: 0 30px;
+    border-radius: 0px;
+    background: #ad9966;
+    border: 1px solid #ad9966;
+    color: #fff;
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    letter-spacing: 2px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+#button-menu:hover {
+    text-decoration: none;
+    color: #ad9966;
+    background-color: #fff;
+    transition: 0.5s ease;
 }
 
 .button-collapse {
@@ -94,30 +192,14 @@ header ul {
 
 #section1 {
     height: 78vh;
+    width: 100%;
     background-image: url(https://preview.colorlib.com/theme/rooftop/img/header-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     position: relative;
 }
-#button-menu {
-    line-height: 48px;
-    padding: 0 30px;
-    border-radius: 0px;
-    background: #ad9966;
-    border: 1px solid #ad9966;
-    color: #fff;
-    display: inline-block;
-    font-weight: normal;
-    position: relative;
-    letter-spacing: 2px;
-    transition: all 0.4s ease 0s;
-    cursor: pointer;
-}
-#button-menu:hover {
-    color: #fff;
-    transition: 0.5s;
-}
+
 .home-banner-text {
     width: 30%;
     align-items: center !important;
@@ -129,74 +211,36 @@ header ul {
     font-size: 55px;
     font-weight: 100;
 }
+
 .home-banner-text h1 {
+    letter-spacing: 10px;
+    font-size: larger;
     font-weight: 100;
     text-align: center;
+    padding-bottom: 20px;
+}
 
+.home-banner-text p {
+    font-weight: 400;
+    padding-top: 40px;
 }
-.corpo-do-site {
-    padding-left: 10%;
-    align-items: center;
-}
-.menu-esquerdo {
-    display:inline-block;
-    padding-bottom: 30vh;
-    width: 35%;
-    font-size: larger;
-    letter-spacing: 7px;
-    margin: 80px;
-    vertical-align: middle;
-}
-.menu-direito {
-    vertical-align: middle;
-    display: inline-block;
-    width: 35%;
-    height: 120vh;
-    background-color: #faf5f0;
-    text-align: center;
-    z-index: -10;
-}
-.aperetivo{
+
+.aperetivo {
     padding-top: 120px;
     margin-bottom: 50px;
 }
-.menu-direito h3 {
-    font-family: "Playfair Display", serif;
-    color: #000;
-    line-height: 1.2em;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: normal;
-    font-style: italic;
-}
-.menu-direito hr{width: 13vh;
-text-align: center;
-border: 0;
-margin-top: 1rem;
-margin-bottom: 1rem;
-border-top: 1px solid;
-margin: auto;
-color: gray;
-}
-.drinks hr{width: 20vh;
+
+.drinks hr {
+    width: 20vh;
 
 }
-.course hr {width: 18vh;
+
+.course hr {
+    width: 18vh;
 
 }
-.menu-esquerdo h1 {
-    font-family: "Playfair Display", serif;
-    color: rgb(0, 0, 0);
-}
-.menu-esquerdo p {
-    color: #7777;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-}
-/*BOTÕES DO LADO DA TELA*/
+
+/*BOTÕES DO LADO DA TELA - USADOS PARA LEVAR AO VIEW MENU E BOOK A TABLE*/
 .view {
     width: 92px;
     height: 180px;
@@ -207,6 +251,7 @@ color: gray;
     transition: 0.5s;
     z-index: 1;
 }
+
 .book {
     width: 92px;
     height: 180px;
@@ -218,89 +263,108 @@ color: gray;
     line-height: 180px;
     transition: 0.5s;
 }
+
 .view a {
     transform: rotate(90deg);
     display: inline-block;
     transition: 0.5s;
     color: black;
 }
+
 .book a {
     transform: rotate(-90deg);
     transition: 0.5s;
     display: inline-block;
 }
+
 .view:hover a {
     transform: rotate(0deg);
 }
+
 .book:hover a {
     transform: rotate(0deg);
 }
-/*IMAGENS PARA AMOSTRA*/
-img {
+
+/*IMAGENS PARA AMOSTRAR*/
+.gallery img {
     transition: 0.4s ease;
-    margin: 0;
+    align-items: center;
 }
-.japones {  
+
+.japones {
     display: inline-block;
     overflow: hidden;
-    position: relative;
-    top: -100px;
-    left: -15vh;
+    position: absolute;
+    top: 210vh;
+    right: 100vh;
+    width: 648;
+    height: 450;
 }
-#sushi:hover img{
+
+#sushi:hover {
     filter: brightness(40%);
     transform: scale(1.2);
 }
+
 .italiano {
     display: inline-block;
-    overflow: hidden;
+    position: absolute;
     height: 370px;
     width: 453px;
-}
-#pasta {
-    overflow: hidden;
-    position: absolute;
-    right: 50%;
-    left: 119vh;
-    bottom: -230vh;
+    left: 105vh;
+    bottom: -200vh;
     padding-top: 10vh;
-}
-.macarrao {
-    display: inline-block;
     overflow: hidden;
 }
-#macaroon {
-    overflow: hidden;
-    position: absolute;
-    right: 43%;
-    top: 310vh;
 
+#pasta:hover {
+    filter: brightness(40%);
+    transform: scale(1.2);
 }
+
+.macarao {
+    position: absolute;
+    overflow: hidden;
+    right: 100vh;
+    top: 320vh;
+}
+
+#macaroon:hover {
+    filter: brightness(40%);
+    transform: scale(1.2);
+}
+
 .peixe {
+    position: absolute;
     display: inline-block;
     overflow: hidden;
-}
-#filet {
-    overflow: hidden;
-    position: absolute;
     bottom: -315vh;
     padding: 10px;
-    left: 58.7%;
+    left: 103vh;
 }
-.gallery{
+
+#filet:hover {
+    filter: brightness(40%);
+    transform: scale(1.2);
+}
+
+.gallery {
     width: 60%;
     margin: auto;
 }
+
 .gallery>img:hover {
     color: #000;
     transform: scale(1.2);
 }
+
 /*FORMULÁRIO*/
-.forms{
+.forms {
     position: absolute;
     padding-top: 50vh;
 }
-.formulario{
+
+.formulario {
     background-color: #FAF5F0;
     font: "Roboto", "sans serif";
 }

@@ -134,7 +134,8 @@ header ul {
     text-align: center;
     letter-spacing: 8.8px;
 }
-.home-banner-text p{
+
+.home-banner-text p {
     margin-top: 15px;
     font-size: 18px;
     font-style: "Roboto", "sans-serif";
@@ -273,7 +274,7 @@ img {
 
 .quotes>p {
     color: #7777;
-    font-style: "Roboto", "sans-serif" ;
+    font-style: "Roboto", "sans-serif";
     position: absolute;
     left: 50%;
     padding-top: 10vh;
