@@ -77,13 +77,15 @@ p {
     margin: 0 0 50px;
     font-family: "Roboto", sans-serif;
 }
+
 /*PARTE ABAIXO DO BANNER - MENU E OUTRAS COISAS*/
 
-#button-menu a{
+#button-menu a {
     text-decoration: none;
     color: #FAF5F0;
 }
-#button-menu a:hover{
+
+#button-menu a:hover {
     color: #ad9966;
     transition: 0.5s ease;
 }
@@ -116,7 +118,7 @@ p {
     vertical-align: middle;
     display: inline-block;
     width: 40%;
-    height: 130vh;
+    height: 100vh;
     background-color: #faf5f0;
     text-align: center;
     z-index: -10;
@@ -335,7 +337,7 @@ p {
     display: inline-block;
     overflow: hidden;
     position: absolute;
-    top: 230vh;
+    top: 200vh;
     right: 100vh;
     width: 648;
     height: 450;
@@ -349,10 +351,10 @@ p {
 .italiano {
     display: inline-block;
     position: absolute;
-    height: 370px;
-    width: 453px;
-    left: 105vh;
-    bottom: -200vh;
+    height: auto;
+    width: 545px;
+    left: 101vh;
+    top: 230vh;
     padding-top: 10vh;
     overflow: hidden;
 }
@@ -366,7 +368,7 @@ p {
     position: absolute;
     overflow: hidden;
     right: 100vh;
-    top: 340vh;
+    top: 289vh;
 }
 
 #macaroon:hover {
@@ -378,9 +380,9 @@ p {
     position: absolute;
     display: inline-block;
     overflow: hidden;
-    top: 350vh;
+    top: 300vh;
     padding: 10px;
-    left: 103vh;
+    left: 100vh;
 }
 
 #filet:hover {
@@ -401,12 +403,20 @@ p {
 /*FORMULÁRIO*/
 
 .formulario {
-    
+
     background-color: #FAF5F0;
     font: "Roboto", "sans serif";
+    position: relative;
+    top: 100vh;
+    height: 938px;
+    width: 580px;
+    padding-left: 10%;
+    padding-top: 9vh;
+    margin-left: 77%;
 }
 
 .forms {
     position: absolute;
     padding-top: 50vh;
 }
+
