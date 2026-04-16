@@ -72,7 +72,7 @@ header ul a {
 }
 
 #section1 {
-    height: 100vh;
+    height: 78vh;
     width: 100%;
     background-image: url(header-bg-rooftop.png);
     background-repeat: no-repeat;
@@ -180,65 +180,6 @@ header ul a {
 
 }
 
-/**/
-
-/*BOTÕES DO LADO DA TELA - USADOS PARA LEVAR AO VIEW MENU E BOOK A TABLE*/
-
-.view {
-    width: 92px;
-    height: 180px;
-    background-image: url(view-menu-rooftop.png);
-    position: fixed;
-    top: 40%;
-    line-height: 180px;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.book {
-    width: 92px;
-    height: 180px;
-    background-image: url(book-table.png);
-    position: fixed;
-    top: 40%;
-    z-index: 1;
-    left: 190vh;
-    line-height: 180px;
-    transition: 0.5s;
-}
-
-.view a {
-    transform: rotate(90deg);
-    display: inline-block;
-    transition: 0.5s;
-    color: black;
-}
-
-.book a {
-    transform: rotate(-90deg);
-    transition: 0.5s;
-    display: inline-block;
-}
-
-.view:hover a {
-    transform: rotate(0deg);
-}
-
-.book:hover a {
-    transform: rotate(0deg);
-}
-
-.botaos-do-lado .book a {
-    text-decoration: none;
-    outline: 0;
-    color: #fff;
-}
-
-.botaos-do-lado .view a {
-    text-decoration: none;
-    outline: 0;
-}
-
 /*CORPO DO SITE*/
 
 .gallery {
@@ -246,49 +187,48 @@ header ul a {
     margin: auto;
 }
 
-.texto-about-rooftop{
-    position: absolute;
-    align-items: end;
-    text-align: start;
-    padding-left: 50%;
-    padding-bottom: 10vh;
+.texto-about-rooftop {
+    position: relative;
+    text-align: end;
+    display: inline-block;
+    padding-bottom: 30vh;
+    width: 35%;
+    font-size: larger;
+    letter-spacing: 7px;
+    margin: 80px;
 }
 
-.gallery img {
-    transition: 0.4s ease;
-    align-items: center;
+.texto-about-rooftop h1 {
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0);
+}
+
+.texto-about-rooftop p {
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-.dough {
+#italiano {
     position: absolute;
-    height: 548px;
-    width: 150px;
     top: 115vh;
     left: 25vh;
     padding-top: 10vh;
-    transform: scale(1.4);
 
 }
 
-.peixe {
+.massa {
     position: absolute;
     top: 200vh;
     padding: 10px;
+    left: 200vh;
 }
-.texto-about-rooftop h1{
-    color: black; 
-    font-size: 15px;
-    padding-left: 10vh;
-    font-family: "Roboto", sans-serif;
-}
-.texto-about-rooftop p {
-    color: #464646c1; 
+
+p {
     font-size: 15px;
     margin: 0 0 50px;
-    padding-left: 10vh;
     font-family: "Roboto", sans-serif;
-}
-.espaco-entre-imagem-texto{
-    padding: 10vh;
-    height: 100vh;
 }

@@ -79,7 +79,7 @@ p {
 }
 
 #section1 {
-    height: 100vh;
+    height: 78vh;
     width: 100%;
     background-image: url(header-bg-rooftop.png);
     background-repeat: no-repeat;
@@ -90,7 +90,6 @@ p {
 
 .home-banner-text {
     width: 30%;
-    align-items: center !important;
     text-align: center;
     position: relative;
     left: 35%;
