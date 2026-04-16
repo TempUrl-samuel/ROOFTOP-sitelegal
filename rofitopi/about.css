@@ -247,9 +247,11 @@ header ul a {
 }
 
 .texto-about-rooftop{
-
-    position: relative;
-    text-align: end;
+    position: absolute;
+    align-items: end;
+    text-align: start;
+    padding-left: 50%;
+    padding-bottom: 10vh;
 }
 
 .gallery img {
@@ -257,13 +259,14 @@ header ul a {
     align-items: center;
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-.japones {
+.dough {
     position: absolute;
-    height: 648px;
-    width: 450px;
+    height: 548px;
+    width: 150px;
     top: 115vh;
     left: 25vh;
     padding-top: 10vh;
+    transform: scale(1.4);
 
 }
 
@@ -271,11 +274,21 @@ header ul a {
     position: absolute;
     top: 200vh;
     padding: 10px;
-    left: 200vh;
 }
-
-p {
+.texto-about-rooftop h1{
+    color: black; 
+    font-size: 15px;
+    padding-left: 10vh;
+    font-family: "Roboto", sans-serif;
+}
+.texto-about-rooftop p {
+    color: #464646c1; 
     font-size: 15px;
     margin: 0 0 50px;
+    padding-left: 10vh;
     font-family: "Roboto", sans-serif;
+}
+.espaco-entre-imagem-texto{
+    padding: 10vh;
+    height: 100vh;
 }
