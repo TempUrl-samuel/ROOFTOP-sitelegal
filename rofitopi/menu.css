@@ -1,16 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*--------------------------------Header----------------------------------------*/
+/*COISAS QUE AFETA TODO O SITE*/
 * {
     box-sizing: border-box;
     margin: 0;
-
 }
 
-header>ul>li {
+/*BANNER - PRIMEIRA COISA QUE SE VER AO ENTRAR NO SITE*/
+
+header ul a {
+    padding: 10px 0;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 450;
+    text-transform: uppercase;
+    padding-right: -5rem;
+    padding-left: -5rem;
+}
+
+header ul li {
     display: inline-block;
     width: 4%;
+    margin-right: 30px;
 }
 
 header ul li a {
@@ -23,22 +34,9 @@ header ul {
     padding: 0;
 }
 
-header {
-    text-align: center;
-    position: sticky;
-    top: 0;
+.dropdown {
     background-color: #fff;
-    z-index: 10;
-}
-
-a {
-    text-decoration: none;
-    outline: 0;
-    color: #fff;
-}
-
-header ul {
-    padding: 10px 0;
+    padding-right: 10px;
 }
 
 #logo {
@@ -48,16 +46,186 @@ header ul {
 }
 
 #logo img {
-    width: 67px;
+    align-items: center;
+    padding-left: 10px;
+    margin-right: 20px;
+    width: 77px;
     height: 79px;
 }
 
+.about-espaco {
+    margin-right: 20vh;
+}
+
+header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+header ul a {
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+}
+
+p {
+
+    font-size: 15px;
+    margin: 0 0 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+#section1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(header-bg-rooftop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.home-banner-text {
+    width: 30%;
+    align-items: center !important;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 40%;
+    color: aliceblue;
+    font-size: 55px;
+    font-weight: 100;
+}
+
+.home-banner-text h1 {
+    letter-spacing: 10px;
+    font-size: larger;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.home-banner-text p {
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+/*PARTE ABAIXO DO BANNER - MENU E OUTRAS COISAS*/
+
+#button-menu a {
+    text-decoration: none;
+    color: #FAF5F0;
+}
+
+#button-menu a:hover {
+    color: #ad9966;
+    transition: 0.5s ease;
+}
+
+.menu-esquerdo {
+    display: inline-block;
+    padding-bottom: 30vh;
+    width: 35%;
+    font-size: larger;
+    letter-spacing: 7px;
+    margin: 80px;
+}
+
+.menu-esquerdo h1 {
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0);
+}
+
+.menu-esquerdo p {
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.menu-direito {
+    position: absolute;
+    vertical-align: middle;
+    display: inline-block;
+    width: 40%;
+    height: 100vh;
+    background-color: #faf5f0;
+    text-align: center;
+    z-index: -10;
+}
+
+.menu-direito hr {
+    width: 13vh;
+    height: 2px;
+    text-align: center;
+    border: none;
+    margin: auto;
+    background-color: #7777774e;
+}
+
+.menu-direito p {
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.menu-direito dd {
+    color: #464646c1;
+    margin-top: 10px;
+    margin-bottom: -2vh;
+}
+
+.menu-direito h3 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.corpo-do-site {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    margin-right: 12vh;
+}
+
 #titulo-daily {
+    padding-top: 20vh;
     margin-bottom: 20px;
     font-size: 48px;
     line-height: 1.5;
     letter-spacing: 7.2px;
     text-transform: uppercase;
+    font-weight: 100;
+}
+
+#button-menu {
+    line-height: 48px;
+    padding: 0 30px;
+    border-radius: 0px;
+    background: #ad9966;
+    border: 1px solid #ad9966;
+    color: #fff;
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    letter-spacing: 2px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+#button-menu:hover {
+    text-decoration: none;
+    color: #ad9966;
+    background-color: #fff;
+    transition: 0.5s ease;
 }
 
 .button-collapse {
@@ -87,116 +255,29 @@ header ul {
     z-index: 10;
 }
 
-/*------------------------------Body--------------------------------------------*/
-#section1 {
-    height: 78vh;
-    background-image: url(https://preview.colorlib.com/theme/rooftop/img/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    position: relative;
+.aperetivo {
+    padding-top: 120px;
+    margin-bottom: 50px;
 }
 
-#button-menu {
-    line-height: 48px;
-    padding: 0 30px;
-    border-radius: 0px;
-    background: #ad9966;
-    border: 1px solid #ad9966;
-    color: #fff;
-    display: inline-block;
-    font-weight: normal;
-    position: relative;
-    letter-spacing: 2px;
-    transition: all 0.4s ease 0s;
-    cursor: pointer;
+.drinks hr {
+    width: 20vh;
 }
 
-#button-menu:hover {
-    color: #fff;
-    transition: 0.5s;
+.course hr {
+    width: 18vh;
+
 }
 
-.home-banner-text {
-    width: 30%;
-    align-items: center !important;
-    text-align: center;
-    position: relative;
-    left: 35%;
-    top: 40%;
-    color: aliceblue;
-    font-size: 55px;
-    font-weight: 100;
-}
+/*BOTÕES DO LADO DA TELA - USADOS PARA LEVAR AO VIEW MENU E BOOK A TABLE*/
 
-.home-banner-text h1 {
-    font-weight: 100;
-    text-align: center;
-    letter-spacing: 8.8px;
-}
-
-.home-banner-text p {
-    margin-top: 15px;
-    font-size: 18px;
-    font-style: "Roboto", "sans-serif";
-}
-
-/*---------------Body - parte dos dois textos um do lado do outro---------------*/
-.corpo-do-site {
-    padding-left: 10%;
-}
-
-.menu-esquerdo {
-    display: inline-block;
-    width: 35%;
-    font-size: larger;
-    letter-spacing: 7px;
-    margin: 80px;
-}
-
-.menu-direito {
-    display: inline-block;
-    width: 35%;
-    height: 110vh;
-    padding: 120px 30px;
-    background-color: #faf5f0;
-    text-align: center;
-    z-index: -10;
-}
-
-.menu-direito h3 {
-    font-family: "Playfair Display", serif;
-    color: #000;
-    line-height: 1.2em;
-    margin-bottom: 0;
-    margin-top: 2vh;
-    font-weight: normal;
-    font-style: italic;
-}
-
-.menu-esquerdo h1 {
-    font-family: "Playfair Display", serif;
-    color: rgb(0, 0, 0);
-}
-
-.menu-esquerdo p {
-    color: #7777;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-/*=--------------------------------os botões do lado---------------------------=*/
 .view {
     width: 92px;
     height: 180px;
-    background-image: url(view-menu-bg.png);
+    background-image: url(view-menu-rooftop.png);
     position: fixed;
     top: 40%;
     line-height: 180px;
-    left: 0;
     transition: 0.5s;
     z-index: 1;
 }
@@ -204,11 +285,11 @@ header ul {
 .book {
     width: 92px;
     height: 180px;
-    background-image: url(book-table-bg.png);
+    background-image: url(book-table.png);
     position: fixed;
     top: 40%;
     z-index: 1;
-    right: 0;
+    left: 190vh;
     line-height: 180px;
     transition: 0.5s;
 }
@@ -234,49 +315,108 @@ header ul {
     transform: rotate(0deg);
 }
 
-/*-----------------------------------galeria - imagens--------------------------*/
-img {
+.botaos-do-lado .book a {
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+}
+
+.botaos-do-lado .view a {
+    text-decoration: none;
+    outline: 0;
+}
+
+/*IMAGENS PARA AMOSTRAR*/
+
+.gallery img {
     transition: 0.4s ease;
-
+    align-items: center;
 }
 
-.chef {
-    width: 555px;
-    height: 800px;
+.japones {
+    display: inline-block;
     overflow: hidden;
-    margin: 0;
-    left: 29vh;
-    bottom: 100px;
-}
-
-#chef {
     position: absolute;
+    top: 200vh;
+    right: 100vh;
+    width: 648;
+    height: 450;
 }
 
-/*----------------------texto ao lado da imagem do chef-------------------------*/
-.quotes {
+#sushi:hover {
+    filter: brightness(40%);
+    transform: scale(1.2);
+}
+
+.italiano {
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    width: 545px;
+    left: 101vh;
+    top: 230vh;
+    padding-top: 10vh;
+    overflow: hidden;
+}
+
+#pasta:hover {
+    filter: brightness(40%);
+    transform: scale(1.2);
+}
+
+.macarao {
+    position: absolute;
+    overflow: hidden;
+    right: 100vh;
+    top: 289vh;
+}
+
+#macaroon:hover {
+    filter: brightness(40%);
+    transform: scale(1.2);
+}
+
+.peixe {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    top: 300vh;
+    padding: 10px;
+    left: 100vh;
+}
+
+#filet:hover {
+    filter: brightness(40%);
+    transform: scale(1.2);
+}
+
+.gallery {
     width: 60%;
     margin: auto;
-    text-align: center;
 }
 
-.quotes>h3 {
-    font-style: "Playfair Display", "serif";
-    position: absolute;
-    font-size: 48px;
-    letter-spacing: 7.2px;
-    left: 60%;
-    font-weight: normal;
-    padding-right: 10vh;
-    width: 370px;
-    height: 144;
+.gallery>img:hover {
+    color: #000;
+    transform: scale(1.2);
 }
 
-.quotes>p {
-    color: #7777;
-    font-style: "Roboto", "sans-serif";
-    position: absolute;
-    left: 50%;
-    padding-top: 10vh;
-    padding-right: 20vh;
+/*FORMULÁRIO*/
+
+.formulario {
+
+    background-color: #FAF5F0;
+    font: "Roboto", "sans serif";
+    position: relative;
+    top: 100vh;
+    height: 938px;
+    width: 580px;
+    padding-left: 10%;
+    padding-top: 9vh;
+    margin-left: 77%;
 }
+
+.forms {
+    position: absolute;
+    padding-top: 50vh;
+}
+
