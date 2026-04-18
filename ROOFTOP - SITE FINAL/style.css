@@ -522,6 +522,26 @@ header>p {
     top: 625%;
     left: 10%;
 }
+
+/*IMAGEM DE UM FRNAGO QUE FICA SE ARRASTANDO MAS QUE NAO PRECISA FAZER A ANIM*/
+
+#Chicken
+
+.seta-esquerda
+
+.seta-direita
+
+.chicken{
+    background-image: url(callaction-bg.jpg);
+    
+}
+
+#Chicken>h3
+
+#Chicken>p
+
+#Chicken>hr
+
 /*FOOTER - ÚLTIMA PARTE DO SITE*/
 .footer-titulo {
     background-color: #04091e;
