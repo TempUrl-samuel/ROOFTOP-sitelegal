@@ -517,7 +517,7 @@ header>p {
     font-weight: 400;
 }
 
-.signature{
+.signature {
     position: absolute;
     top: 625%;
     left: 10%;
@@ -525,22 +525,45 @@ header>p {
 
 /*IMAGEM DE UM FRNAGO QUE FICA SE ARRASTANDO MAS QUE NAO PRECISA FAZER A ANIM*/
 
-#Chicken
-
-.seta-esquerda
-
-.seta-direita
-
-.chicken{
-    background-image: url(callaction-bg.jpg);
-    
+#Chicken {
+    padding-left: 11.5%;
+    padding-top: 9%;
 }
 
-#Chicken>h3
+.seta-esquerda+.seta-direita {
+    position: absolute;
+    height: 200vh;
+    width: 80%;
+    padding-left: 10%;
+}
 
-#Chicken>p
+#Chicken h3 {
+    position: absolute;
+    top: 683%;
+    left: 45%;
+    font-family: "PlayFair Display", "sans serif";
+    font-style: italic;
+    font-weight: 400;
+}
 
-#Chicken>hr
+.texto-chicken{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#Chicken p {
+    position: absolute;
+    top: 689%;
+    left: 45%;
+    font-family: "Roboto", "sans serif";
+    font-style: bold;
+    font-weight: 400;
+}
+
+#Chicken hr {
+    position: absolute;
+    top: 653%;
+    background-color: greenyellow;
+}
 
 /*FOOTER - ÚLTIMA PARTE DO SITE*/
 .footer-titulo {
