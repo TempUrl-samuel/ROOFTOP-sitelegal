@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*COISAS QUE AFETA TODO O SITE*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*BANNER - PRIMEIRA COISA QUE SE VER AO ENTRAR NO SITE*/
+
+header ul a {
+    padding: 10px 0;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 450;
+    text-transform: uppercase;
+    padding-right: -5rem;
+    padding-left: -5rem;
+}
+
+header ul li {
+    display: inline-block;
+    width: 4%;
+    margin-right: 30px;
+}
+
+header ul li a {
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    padding: 0;
+}
+
+.dropdown {
+    background-color: #fff;
+    padding-right: 10px;
+}
+
+#logo {
+    width: 20%;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+#logo img {
+    align-items: center;
+    padding-left: 10px;
+    margin-right: 20px;
+    width: 77px;
+    height: 79px;
+}
+
+.about-espaco {
+    margin-right: 20vh;
+}
+
+header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+header ul a {
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+}
+
+#section1 {
+    height: 78vh;
+    width: 100%;
+    background-image: url(header-bg-rooftop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+#button-menu a{
+    text-decoration: none;
+    color: #FAF5F0;
+}
+#button-menu a:hover{
+    color: #ad9966;
+    transition: 0.5s ease;
+}
+
+.corpo-do-site {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    margin-right: 12vh;
+}
+
+#button-menu:hover {
+    text-decoration: none;
+    color: #ad9966;
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+.button-collapse {
+    position: relative;
+}
+
+.button-collapse>ul {
+    padding: 0;
+    position: absolute;
+    width: 150%;
+    height: 15vh;
+    padding-top: 5vh;
+    z-index: -10;
+    background-color: aliceblue;
+    opacity: 0;
+    text-align: center;
+    list-style: none;
+
+}
+
+.button-collapse li {
+    height: 5vh;
+}
+
+.button-collapse:hover ul {
+    opacity: 1;
+    z-index: 10;
+}
+
+#section1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(header-bg-rooftop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.home-banner-text {
+    width: 30%;
+    align-items: center !important;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 40%;
+    color: aliceblue;
+    font-size: 55px;
+    font-weight: 100;
+}
+
+.home-banner-text h1 {
+    letter-spacing: 10px;
+    font-size: larger;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.home-banner-text p {
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.aperetivo {
+    padding-top: 120px;
+    margin-bottom: 50px;
+}
+
+.drinks hr {
+    width: 20vh;
+}
+
+.course hr {
+    width: 18vh;
+
+}
+
+/*CORPO DO SITE*/
+
+.gallery {
+    width: 60%;
+    margin: auto;
+}
+
+.texto-about-rooftop {
+    position: relative;
+    text-align: end;
+    display: inline-block;
+    padding-bottom: 30vh;
+    width: 35%;
+    font-size: larger;
+    letter-spacing: 7px;
+    margin: 80px;
+}
+
+.texto-about-rooftop h1 {
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0);
+}
+
+.texto-about-rooftop p {
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+#italiano {
+    position: absolute;
+    top: 115vh;
+    left: 25vh;
+    padding-top: 10vh;
+
+}
+
+.massa {
+    position: absolute;
+    top: 200vh;
+    padding: 10px;
+    left: 200vh;
+}
+
+p {
+    font-size: 15px;
+    margin: 0 0 50px;
+    font-family: "Roboto", sans-serif;
+}
