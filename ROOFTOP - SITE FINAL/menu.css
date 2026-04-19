@@ -153,7 +153,7 @@ p {
     vertical-align: middle;
     display: inline-block;
     width: 40%;
-    height: 100vh;
+    height: 130%;
     background-color: #faf5f0;
     text-align: center;
     z-index: -10;
@@ -177,6 +177,16 @@ p {
     color: #464646c1;
     margin-top: 10px;
     margin-bottom: -2vh;
+}
+
+.menu-direito h3 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: normal;
+    font-style: italic;
 }
 
 .menu-direito h3 {
@@ -326,97 +336,46 @@ p {
     outline: 0;
 }
 
-/*IMAGENS PARA AMOSTRAR*/
+/*TEXTO OA LADO DO CHEFE*/
 
-.gallery img {
-    transition: 0.4s ease;
-    align-items: center;
-}
-
-.japones {
-    display: inline-block;
+.cozinheiro{
+     display: inline-block;
     overflow: hidden;
     position: absolute;
-    top: 200vh;
+    top: 230%;
     right: 100vh;
     width: 648;
     height: 450;
 }
 
-#sushi:hover {
-    filter: brightness(40%);
-    transform: scale(1.2);
-}
-
-.italiano {
+.quotes{
     display: inline-block;
-    position: absolute;
-    height: auto;
-    width: 545px;
-    left: 101vh;
-    top: 230vh;
-    padding-top: 10vh;
-    overflow: hidden;
-}
-
-#pasta:hover {
-    filter: brightness(40%);
-    transform: scale(1.2);
-}
-
-.macarao {
-    position: absolute;
-    overflow: hidden;
-    right: 100vh;
-    top: 289vh;
-}
-
-#macaroon:hover {
-    filter: brightness(40%);
-    transform: scale(1.2);
-}
-
-.peixe {
-    position: absolute;
-    display: inline-block;
-    overflow: hidden;
-    top: 300vh;
-    padding: 10px;
-    left: 100vh;
-}
-
-#filet:hover {
-    filter: brightness(40%);
-    transform: scale(1.2);
-}
-
-.gallery {
-    width: 60%;
-    margin: auto;
-}
-
-.gallery>img:hover {
-    color: #000;
-    transform: scale(1.2);
-}
-
-/*FORMULÁRIO*/
-
-.formulario {
-
-    background-color: #FAF5F0;
-    font: "Roboto", "sans serif";
     position: relative;
-    top: 100vh;
-    height: 938px;
-    width: 580px;
-    padding-left: 10%;
-    padding-top: 9vh;
-    margin-left: 77%;
+    width: 545px;
+    left: 64%;
+    top: 250%;
+    padding-top: 10vh;
 }
 
-.forms {
-    position: absolute;
-    padding-top: 50vh;
+.quotes>h3 {
+    text-align: start;
+    color: #000000c1;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    padding-left: 10%;
+    letter-spacing: 7.2px;
+}
+
+.quotes>p {
+    text-align: start;
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-bottom: 10%;
 }
 

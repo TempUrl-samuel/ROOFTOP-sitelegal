@@ -610,7 +610,6 @@ header>p {
     width: 350px;
     padding-left: 15%;
     bottom: 30%;
-    top: 690%;
 }
 
 .texto-localiazacao {
@@ -620,13 +619,21 @@ header>p {
 }
 
 /*FOOTER - ÚLTIMA PARTE DO SITE*/
+
 .footer-titulo {
     background-color: #04091e;
+    height: 50vh;
+    margin-top: 10%;
+    padding-left: 12%;
 }
 
 .footer-titulo>ul {
-    position: relative;
+    display: inline-block;
     padding-top: 10vh;
+}
+
+.footer-titulo>ul>li {
+    display: inline-block;
 }
 
 .footer-titulo>ul>li>h4 {
@@ -637,4 +644,29 @@ header>p {
 
 .footer-titulo>ul>li>p {
     color: #f6e1af4e;
+}
+
+#newsletter {
+    position: absolute;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+#caixa-send-email{
+    width: 40vh;
+    height: 40px;
+    background: transparent;
+    border: thick 1px #f6e1af4e;
+}
+
+#copyright{
+    color: #f6e1af4e;
+    padding-top: 6vh;
+}
+
+.rede-sociais>img{
+    position: absolute;
+    left:;
+    width: 10px;
+    height: 10px;
 }
