@@ -8,6 +8,9 @@
 }
 
 /*BANNER - PRIMEIRA COISA QUE SE VER AO ENTRAR NO SITE*/
+.cabecalho {
+    z-index: 999 !important;
+}
 
 header ul a {
     padding: 10px 0;
@@ -16,6 +19,7 @@ header ul a {
     text-transform: uppercase;
     padding-right: -5rem;
     padding-left: -5rem;
+    transition: 0.5s ease;
 }
 
 header ul li {
@@ -34,6 +38,10 @@ header ul {
     padding: 0;
 }
 
+header>a:hover {
+    color: #ad9966;
+}
+
 .dropdown {
     background-color: #fff;
     padding-right: 10px;
@@ -43,18 +51,15 @@ header ul {
     width: 20%;
     padding-top: 20px;
     vertical-align: middle;
+    padding-left: 1%;
 }
 
 #logo img {
+    position: relative;
     align-items: center;
-    padding-left: 10px;
-    margin-right: 20px;
+    padding-left: 5%;
     width: 77px;
     height: 79px;
-}
-
-.about-espaco {
-    margin-right: 20vh;
 }
 
 header {
@@ -71,7 +76,7 @@ header ul a {
     color: #fff;
 }
 
-p {
+header>p {
 
     font-size: 15px;
     margin: 0 0 50px;
@@ -79,25 +84,25 @@ p {
 }
 
 #section1 {
-    height: 100vh;
+    height: 55vh;
     width: 100%;
-    background-image: url(header-bg-rooftop.png);
+    background-image: url(banner-bg-cortado.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     position: relative;
+    margin-bottom: -7px;
 }
 
 .home-banner-text {
-    width: 30%;
-    align-items: center !important;
+    width: 40%;
     text-align: center;
     position: relative;
-    left: 35%;
-    top: 40%;
+    left: 30%;
+    top: 30%;
     color: aliceblue;
-    font-size: 55px;
-    font-weight: 100;
+    font-size: 45px;
+    font-weight: lighter;
 }
 
 .home-banner-text h1 {
@@ -105,15 +110,26 @@ p {
     font-size: larger;
     font-weight: 100;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: -10%;
 }
 
 .home-banner-text p {
     font-weight: 400;
     padding-top: 40px;
+    font-size: 15px;
+    margin: 0 0 50px;
+    font-family: "Roboto", sans-serif;
+
+}
+.home-banner-text hr{
+    height: 1px;
+    width: 70%;
+    position: absolute;
+    left: 14%;
+    font-weight: 100;
 }
 
-/*PARTE ABAIXO DO BANNER - MENU E OUTRAS COISAS*/
+/*PARTE ABAIXO DO BANNER - MENU E OUTRAS COISAS---------------------*/
 
 #button-menu a {
     text-decoration: none;
@@ -336,19 +352,21 @@ p {
     outline: 0;
 }
 
-/*TEXTO OA LADO DO CHEFE*/
+/*CHEFE-------------------------------------------------------------*/
 
-.cozinheiro{
-     display: inline-block;
+.cozinheiro {
+    display: inline-block;
     overflow: hidden;
     position: absolute;
-    top: 230%;
+    top: 182%;
     right: 100vh;
     width: 648;
     height: 450;
+    z-index: 0;
+    margin-bottom: 10vh;
 }
 
-.quotes{
+.quotes {
     display: inline-block;
     position: relative;
     width: 545px;
@@ -379,3 +397,75 @@ p {
     padding-bottom: 10%;
 }
 
+.signature {
+    position: absolute;
+    top: 270%;
+    left: 60%;
+    margin-bottom: 10vh;
+}
+
+/*FRANGO------------------------------------------------------------*/
+
+#Chicken {
+    padding-top: 27%;
+    padding-bottom: 27%;
+}
+
+.chicken {
+    background-image: url(callaction-bg.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 80vh;
+    width: 90%;
+}
+
+/*FOOTER------------------------------------------------------------*/
+
+.footer-titulo {
+    box-sizing: border-box;
+    background-color: #04091e;
+    height: 50vh;
+    margin-top: 10%;
+    padding-left: 12%;
+}
+
+.footer-titulo>ul {
+    display: inline-block;
+    padding-top: 10vh;
+}
+
+.footer-titulo>ul>li {
+    display: inline-block;
+}
+
+.footer-titulo h4 {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.footer-titulo>ul {
+    color: #f6e1af4e;
+}
+
+#newsletter {
+    position: absolute;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+.caixa-send-email {
+    width: 40vh;
+    height: 40px;
+    background: #04091e;
+    border: thick 1px #f6e1af4e;
+}
+
+#copyright {
+    color: #f6e1af4e;
+    padding-top: 6vh;
+}
+
+#copyright>span{
+    color: #ad9966;
+}

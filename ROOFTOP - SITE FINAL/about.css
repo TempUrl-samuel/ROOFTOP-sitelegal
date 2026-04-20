@@ -71,16 +71,6 @@ header ul a {
     color: #fff;
 }
 
-#section1 {
-    height: 78vh;
-    width: 100%;
-    background-image: url(header-bg-rooftop.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    position: relative;
-}
-
 #button-menu a{
     text-decoration: none;
     color: #FAF5F0;
@@ -132,25 +122,25 @@ header ul a {
 }
 
 #section1 {
-    height: 100vh;
+    height: 55vh;
     width: 100%;
-    background-image: url(header-bg-rooftop.png);
+    background-image: url(banner-bg-cortado.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     position: relative;
+    margin-bottom: -7px;
 }
 
 .home-banner-text {
-    width: 30%;
-    align-items: center !important;
+    width: 40%;
     text-align: center;
     position: relative;
-    left: 35%;
-    top: 40%;
+    left: 30%;
+    top: 30%;
     color: aliceblue;
-    font-size: 55px;
-    font-weight: 100;
+    font-size: 45px;
+    font-weight: lighter;
 }
 
 .home-banner-text h1 {
@@ -158,26 +148,23 @@ header ul a {
     font-size: larger;
     font-weight: 100;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: -10%;
 }
 
 .home-banner-text p {
     font-weight: 400;
     padding-top: 40px;
+    font-size: 15px;
+    margin: 0 0 50px;
+    font-family: "Roboto", sans-serif;
+
 }
-
-.aperetivo {
-    padding-top: 120px;
-    margin-bottom: 50px;
-}
-
-.drinks hr {
-    width: 20vh;
-}
-
-.course hr {
-    width: 18vh;
-
+.home-banner-text hr{
+    height: 1px;
+    width: 70%;
+    position: absolute;
+    left: 14%;
+    font-weight: 100;
 }
 
 /*CORPO DO SITE*/
@@ -187,10 +174,13 @@ header ul a {
     margin: auto;
 }
 
+
+
 .texto-about-rooftop {
     position: relative;
-    text-align: end;
+    text-align: start;
     display: inline-block;
+    left: 50%;
     padding-bottom: 30vh;
     width: 35%;
     font-size: larger;
@@ -214,10 +204,8 @@ header ul a {
 
 #italiano {
     position: absolute;
-    top: 115vh;
-    left: 25vh;
-    padding-top: 10vh;
-
+    width: 450;
+    height: 649;
 }
 
 .massa {
@@ -231,4 +219,113 @@ p {
     font-size: 15px;
     margin: 0 0 50px;
     font-family: "Roboto", sans-serif;
+}
+
+
+.cozinheiro {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 90%;
+    right: 100vh;
+    width: 648;
+    height: 450;
+    z-index: 0;
+    margin-bottom: 10vh;
+}
+
+.quotes {
+    display: inline-block;
+    position: relative;
+    width: 545px;
+    left: 56%;
+    padding-top: 30vh;
+}
+
+.quotes>h3 {
+    text-align: start;
+    color: #000000c1;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    padding-left: 10%;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+}
+
+.quotes>p {
+    text-align: start;
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+.signature {
+    position: absolute;
+    top: 270%;
+    left: 60%;
+    margin-bottom: 10vh;
+}
+
+#Chicken {
+    padding-top: 27%;
+    padding-bottom: 27%;
+}
+
+.chicken {
+    background-image: url(callaction-bg.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 80vh;
+    width: 90%;
+    margin-left: 12%;
+}
+
+/*CHEF'S QUOTES - ABAIXO DO FORMULÁRIO*/
+
+.chef {
+    position: relative;
+    padding: 50%;
+    bottom: 100vh;
+    z-index: 2;
+}
+
+.quotes{
+    max-height: 100vh;
+}
+
+.quotes-esquerda {
+    position: absolute;
+    padding-top: 20%;
+    padding-left: 10%;
+    z-index: -3;
+}
+
+.quotes-esquerda>h1 {
+    text-align: start;
+    color: #000000c1;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.quotes-esquerda>p {
+    text-align: start;
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.signature {
+    position: absolute;
+    top: 625%;
+    left: 10%;
 }
