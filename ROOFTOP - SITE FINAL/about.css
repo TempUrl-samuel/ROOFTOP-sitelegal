@@ -169,52 +169,6 @@ header ul a {
 
 /*CORPO DO SITE*/
 
-.gallery {
-    width: 60%;
-    margin: auto;
-}
-
-
-
-.texto-about-rooftop {
-    position: relative;
-    text-align: start;
-    display: inline-block;
-    left: 50%;
-    padding-bottom: 30vh;
-    width: 35%;
-    font-size: larger;
-    letter-spacing: 7px;
-    margin: 80px;
-}
-
-.texto-about-rooftop h1 {
-    font-family: "Playfair Display", serif;
-    color: rgb(0, 0, 0);
-}
-
-.texto-about-rooftop p {
-    color: #464646c1;
-    letter-spacing: 0.1px;
-    line-height: 30px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-
-#italiano {
-    position: absolute;
-    width: 450;
-    height: 649;
-}
-
-.massa {
-    position: absolute;
-    top: 200vh;
-    padding: 10px;
-    left: 200vh;
-}
-
 p {
     font-size: 15px;
     margin: 0 0 50px;
@@ -226,7 +180,7 @@ p {
     display: inline-block;
     overflow: hidden;
     position: absolute;
-    top: 90%;
+    bottom: 70vh;
     right: 100vh;
     width: 648;
     height: 450;
@@ -234,7 +188,7 @@ p {
     margin-bottom: 10vh;
 }
 
-.quotes {
+.aspas {
     display: inline-block;
     position: relative;
     width: 545px;
@@ -242,7 +196,7 @@ p {
     padding-top: 30vh;
 }
 
-.quotes>h3 {
+.aspas>h3 {
     text-align: start;
     color: #000000c1;
     font-family: "Playfair Display", sans-serif;
@@ -253,7 +207,7 @@ p {
     text-transform: uppercase;
 }
 
-.quotes>p {
+.aspas>p {
     text-align: start;
     color: #464646c1;
     letter-spacing: 0.1px;
@@ -271,28 +225,29 @@ p {
     left: 60%;
     margin-bottom: 10vh;
 }
-
-#Chicken {
-    padding-top: 27%;
-    padding-bottom: 27%;
-}
+/*CHICKEN-----------------------------------------------------------*/
 
 .chicken {
     background-image: url(callaction-bg.jpg);
     background-repeat: no-repeat;
     position: absolute;
     height: 80vh;
-    width: 90%;
-    margin-left: 12%;
+    width: 88%;
+    top: 200%;
+    display: inline-block;
+    left: 10%;
+    margin-top: 50%;
 }
 
 /*CHEF'S QUOTES - ABAIXO DO FORMULÁRIO*/
 
-.chef {
+.cozinheiro {
+    display: inline-block;
+    overflow: hidden;
     position: relative;
-    padding: 50%;
-    bottom: 100vh;
-    z-index: 2;
+    top: 100%;
+    z-index: 0;
+    margin-bottom: 10vh;
 }
 
 .quotes{
@@ -304,6 +259,7 @@ p {
     padding-top: 20%;
     padding-left: 10%;
     z-index: -3;
+    bottom: 150%;
 }
 
 .quotes-esquerda>h1 {
@@ -329,3 +285,30 @@ p {
     top: 625%;
     left: 10%;
 }
+
+/*CHEF'S QUOTES - ABAIXO DO FORMULÁRIO*/
+
+.quotes-esquerda {
+    position: absolute;
+    padding-top: 20%;
+    top: 50%;
+}
+
+.quotes-esquerda>h1 {
+    text-align: start;
+    color: #000000c1;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.quotes-esquerda>p {
+    text-align: start;
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
