@@ -8,6 +8,9 @@
 }
 
 /*BANNER - PRIMEIRA COISA QUE SE VER AO ENTRAR NO SITE*/
+.cabecalho {
+    z-index: 999 !important;
+}
 
 header ul a {
     padding: 10px 0;
@@ -16,6 +19,7 @@ header ul a {
     text-transform: uppercase;
     padding-right: -5rem;
     padding-left: -5rem;
+    transition: 0.5s ease;
 }
 
 header ul li {
@@ -34,6 +38,10 @@ header ul {
     padding: 0;
 }
 
+header>a:hover {
+    color: #ad9966;
+}
+
 .dropdown {
     background-color: #fff;
     padding-right: 10px;
@@ -43,18 +51,15 @@ header ul {
     width: 20%;
     padding-top: 20px;
     vertical-align: middle;
+    padding-left: 1%;
 }
 
 #logo img {
+    position: relative;
     align-items: center;
-    padding-left: 10px;
-    margin-right: 20px;
+    padding-left: 5%;
     width: 77px;
     height: 79px;
-}
-
-.about-espaco {
-    margin-right: 20vh;
 }
 
 header {
@@ -71,54 +76,11 @@ header ul a {
     color: #fff;
 }
 
-#button-menu a{
-    text-decoration: none;
-    color: #FAF5F0;
-}
-#button-menu a:hover{
-    color: #ad9966;
-    transition: 0.5s ease;
-}
+header>p {
 
-.corpo-do-site {
-    padding-left: 10%;
-    padding-right: 10%;
-    align-items: center;
-    margin-right: 12vh;
-}
-
-#button-menu:hover {
-    text-decoration: none;
-    color: #ad9966;
-    background-color: #fff;
-    transition: 0.5s ease;
-}
-
-.button-collapse {
-    position: relative;
-}
-
-.button-collapse>ul {
-    padding: 0;
-    position: absolute;
-    width: 150%;
-    height: 15vh;
-    padding-top: 5vh;
-    z-index: -10;
-    background-color: aliceblue;
-    opacity: 0;
-    text-align: center;
-    list-style: none;
-
-}
-
-.button-collapse li {
-    height: 5vh;
-}
-
-.button-collapse:hover ul {
-    opacity: 1;
-    z-index: 10;
+    font-size: 15px;
+    margin: 0 0 50px;
+    font-family: "Roboto", sans-serif;
 }
 
 #section1 {
@@ -151,7 +113,7 @@ header ul a {
     padding-bottom: -10%;
 }
 
-.home-banner-text p {
+.home-banner-text>p {
     font-weight: 400;
     padding-top: 40px;
     font-size: 15px;
@@ -167,36 +129,31 @@ header ul a {
     font-weight: 100;
 }
 
-/*CORPO DO SITE*/
+/*CHEFE----------------------------------------------------------------*/
 
-p {
-    font-size: 15px;
-    margin: 0 0 50px;
-    font-family: "Roboto", sans-serif;
+.chef {
+    position: absolute;
+    padding-right: 50%;
+    z-index: 2;
 }
 
-
-.cozinheiro {
+.massinha {
     display: inline-block;
     overflow: hidden;
     position: absolute;
-    bottom: 70vh;
-    right: 100vh;
-    width: 648;
-    height: 450;
-    z-index: 0;
-    margin-bottom: 10vh;
+    right: 66%;
+    padding-bottom: 100%;
 }
 
-.aspas {
+.dinning {
     display: inline-block;
     position: relative;
     width: 545px;
-    left: 56%;
-    padding-top: 30vh;
+    left: 64%;
+    top: 250%;
 }
 
-.aspas>h3 {
+.dinning>h3 {
     text-align: start;
     color: #000000c1;
     font-family: "Playfair Display", sans-serif;
@@ -204,28 +161,23 @@ p {
     font-size: 50px;
     padding-left: 10%;
     letter-spacing: 7.2px;
-    text-transform: uppercase;
 }
 
-.aspas>p {
+.dinning>p {
     text-align: start;
     color: #464646c1;
     letter-spacing: 0.1px;
     line-height: 30px;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
-    font-weight: 400;
-    padding-left: 10%;
-    padding-bottom: 10%;
 }
+/*FRANGO------------------------------------------------------------*/
 
-.signature {
-    position: absolute;
-    top: 270%;
-    left: 60%;
-    margin-bottom: 10vh;
+#Chicken {
+    padding-left: 11.5%;
+    padding-top: 9%;
+
 }
-/*CHICKEN-----------------------------------------------------------*/
 
 .chicken {
     background-image: url(callaction-bg.jpg);
@@ -233,36 +185,28 @@ p {
     position: absolute;
     height: 80vh;
     width: 88%;
-    top: 200%;
-    display: inline-block;
-    left: 10%;
-    margin-top: 50%;
+    top: 660%;
+    margin-bottom: -100%;
 }
 
-/*CHEF'S QUOTES - ABAIXO DO FORMULÁRIO*/
+/*CHEF'S QUOTES*/
 
-.cozinheiro {
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    top: 100%;
-    z-index: 0;
-    margin-bottom: 10vh;
-}
-
-.quotes{
+.chefes-quotes{
     max-height: 100vh;
+        position: relative;
+    padding: 50%;
+    bottom: 100vh;
+    z-index: 2;
 }
 
-.quotes-esquerda {
+.chefes-quotes-esquerda {
     position: absolute;
     padding-top: 20%;
     padding-left: 10%;
     z-index: -3;
-    bottom: 150%;
 }
 
-.quotes-esquerda>h1 {
+.chefes-quotes-esquerda>h1 {
     text-align: start;
     color: #000000c1;
     font-family: "Playfair Display", sans-serif;
@@ -270,7 +214,7 @@ p {
     font-size: 50px;
 }
 
-.quotes-esquerda>p {
+.chefes-quotes-esquerda>p {
     text-align: start;
     color: #464646c1;
     letter-spacing: 0.1px;
@@ -286,29 +230,54 @@ p {
     left: 10%;
 }
 
-/*CHEF'S QUOTES - ABAIXO DO FORMULÁRIO*/
+/*FOOTER - ÚLTIMA PARTE DO SITE*/
 
-.quotes-esquerda {
+.footer-titulo {
     position: absolute;
-    padding-top: 20%;
-    top: 50%;
+    background-color: #04091e;
+    height: 50vh;
+    width: 100%;
+    margin-top: 120%;
+    padding-left: 10%;
 }
 
-.quotes-esquerda>h1 {
-    text-align: start;
-    color: #000000c1;
-    font-family: "Playfair Display", sans-serif;
-    font-weight: 400;
-    font-size: 50px;
+.footer-titulo>ul {
+    display: inline-block;
+    padding-top: 10vh;
 }
 
-.quotes-esquerda>p {
-    text-align: start;
-    color: #464646c1;
-    letter-spacing: 0.1px;
-    line-height: 30px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+.footer-titulo>ul>li {
+    display: inline-block;
 }
 
+.footer-titulo h4 {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.footer-titulo>ul {
+    color: #f6e1af4e;
+}
+
+#newsletter {
+    position: absolute;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+#enter-email {
+    width: 40vh;
+    height: 40px;
+    background: transparent;
+    border: bold 1px #f6e1af80;
+}
+
+#copyright {
+    color: #f6e1af4e;
+    padding-top: 6vh;
+}
+
+#copyright>span{
+    color: #ad9966;
+}
